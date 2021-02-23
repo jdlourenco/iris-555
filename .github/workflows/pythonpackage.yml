@@ -23,13 +23,13 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Install package and test
-      run: |
-        make install test clean
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     pip install -r requirements.txt
+    # - name: Install package and test
+    #   run: |
+    #     make install test clean
 
 # # 🤖 uncomment the following lines to activate Continuous Deployment to Heroku
 # # - only remove the trailing #, do not change the spaces (there should be 2 spaces before the deploy_heroku key)
